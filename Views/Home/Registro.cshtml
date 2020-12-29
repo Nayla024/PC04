@@ -1,0 +1,28 @@
+@model Registro
+
+<h1>solicitud de usuarios</h1>
+
+<div asp-validation-summary="All"></div>
+
+
+<form action="" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input type="text" asp-for="Nombre" required class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Url"></label>
+        <input type="url" asp-for="Url" required class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Apellido"></label>
+        <textarea asp-for="Apellido" required class="form-control"></textarea>
+
+    </div>
+
+    <div>
+  <button class="btn btn-dark">Enviar</button>
+    </div>
+</form>
